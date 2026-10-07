@@ -12,6 +12,7 @@ import com.mhxx.gansimu.GanSimuApp
 import com.mhxx.gansimu.R
 import com.mhxx.gansimu.databinding.ActivityMainBinding
 import com.mhxx.gansimu.ui.tabs.*
+import com.mhxx.gansimu.state.AppState
 
 /**
  * メイン画面 - HTML RNG Tool 準拠のダークUI
@@ -46,6 +47,7 @@ class MainActivity : AppCompatActivity() {
         val chips = listOf(binding.chipAll, binding.chipSword, binding.chipGunner)
         fun select(index: Int) {
             typeFilter = index
+            AppState.typeFilter = index
             chips.forEachIndexed { i, btn ->
                 btn.setBackgroundColor(
                     if (i == index) getColor(R.color.accent) else getColor(R.color.surface2)

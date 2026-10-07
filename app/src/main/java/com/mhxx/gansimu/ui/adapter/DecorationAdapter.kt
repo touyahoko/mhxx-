@@ -7,7 +7,8 @@ import com.mhxx.gansimu.databinding.ItemSimpleBinding
 import com.mhxx.gansimu.model.Decoration
 
 class DecorationAdapter(
-    private val items: List<Decoration>
+    private val items: List<Decoration>,
+    private val onClick: ((Decoration) -> Unit)? = null
 ) : RecyclerView.Adapter<DecorationAdapter.VH>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
@@ -23,6 +24,7 @@ class DecorationAdapter(
             b.txtTitle.text = d.name
             b.txtSubtitle.text = "スロット${d.slotsRequired}  " +
                     d.skills.joinToString(" ") { "${it.series}${if (it.points > 0) "+" else ""}${it.points}" }
+            b.root.setOnClickListener { onClick?.invoke(d) }
         }
     }
 }

@@ -27,10 +27,10 @@ class MainActivity : AppCompatActivity() {
 
     private val tabTitles = listOf(
         "シミュレータ",
-        "除外装備",
-        "固定装備",
-        "装飾品除外",
-        "お守り",
+        "除外装備設定",
+        "固定装備設定",
+        "装飾品除外設定",
+        "お守り設定",
         "マイセット"
     )
 

@@ -4,23 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:layout_marginVertical="2dp"
-    android:background="@drawable/bg_card">
-
+    android:padding="8dp"
+    android:layout_marginBottom="1dp"
+    android:background="@color/surface2">
     <TextView
         android:id="@+id/txtTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
+        android:textSize="13sp"
         android:textStyle="bold"
         android:textColor="@color/text" />
-
     <TextView
         android:id="@+id/txtSubtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="12sp"
+        android:textSize="11sp"
         android:textColor="@color/muted"
         android:paddingTop="2dp" />
 </LinearLayout>

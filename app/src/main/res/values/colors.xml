@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="bg">#12141A</color>
-    <color name="surface">#1C1F28</color>
-    <color name="surface2">#252836</color>
-    <color name="border">#33374A</color>
-    <color name="text">#E8EAF0</color>
-    <color name="muted">#8B90A5</color>
-    <color name="accent">#5B8DEF</color>
-    <color name="accent2">#3D6BC7</color>
-    <color name="success">#4CAF82</color>
-    <color name="warn">#E6A817</color>
-    <color name="danger">#E05C5C</color>
-    <color name="primary">#5B8DEF</color>
-    <color name="primary_container">#252836</color>
+    <!-- 本家 Metal L&F に近いライトテーマ -->
+    <color name="bg">#E8E8E8</color>
+    <color name="surface">#F5F5F5</color>
+    <color name="surface2">#FFFFFF</color>
+    <color name="border">#A0A0A0</color>
+    <color name="text">#202020</color>
+    <color name="muted">#606060</color>
+    <color name="accent">#3C7FB1</color>
+    <color name="accent2">#2B5F8A</color>
+    <color name="success">#2E7D32</color>
+    <color name="warn">#E65100</color>
+    <color name="danger">#C62828</color>
+
+    <color name="primary">#3C7FB1</color>
+    <color name="primary_container">#D6E8F5</color>
     <color name="on_primary">#FFFFFF</color>
-    <color name="secondary">#5B8DEF</color>
-    <color name="background">#12141A</color>
-    <color name="text_primary">#E8EAF0</color>
-    <color name="text_secondary">#8B90A5</color>
+    <color name="secondary">#5A5A5A</color>
+    <color name="background">#E8E8E8</color>
+    <color name="text_primary">#202020</color>
+    <color name="text_secondary">#606060</color>
+
+    <color name="header_bg">#D4D0C8</color>
+    <color name="tab_bg">#F0F0F0</color>
+    <color name="button_face">#E1E1E1</color>
 </resources>

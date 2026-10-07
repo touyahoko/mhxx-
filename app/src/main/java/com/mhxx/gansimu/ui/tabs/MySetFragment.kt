@@ -68,7 +68,7 @@ class MySetFragment : Fragment() {
         }
         val input = EditText(requireContext()).apply {
             setText(candidate.name.ifEmpty { "マイセット${AppState.mySets.size + 1}" })
-            setTextColor(0xFFE8EAF0.toInt())
+            setTextColor(0xFF202020.toInt())
         }
         AlertDialog.Builder(requireContext())
             .setTitle("マイセットに保存")
@@ -88,7 +88,7 @@ class MySetFragment : Fragment() {
         if (AppState.mySets.isEmpty()) {
             binding.txtEmpty.visibility = View.VISIBLE
             binding.txtEmpty.text = "保存セットなし\nシミュレータで検索後、このタイトルをタップで保存"
-            binding.txtEmpty.setTextColor(0xFF8B90A5.toInt())
+            binding.txtEmpty.setTextColor(0xFF606060.toInt())
         } else {
             binding.txtEmpty.visibility = View.GONE
         }

@@ -25,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="任意お守り設定"
-                android:textColor="@color/accent"
+                android:textColor="@color/text"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:paddingBottom="10dp" />
@@ -158,7 +158,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="必要お守り自動計算"
-                android:textColor="@color/accent"
+                android:textColor="@color/text"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:paddingBottom="6dp" />
@@ -200,7 +200,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="登録済みお守り一覧（タップで選択）"
-                android:textColor="@color/accent"
+                android:textColor="@color/text"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:paddingBottom="8dp" />

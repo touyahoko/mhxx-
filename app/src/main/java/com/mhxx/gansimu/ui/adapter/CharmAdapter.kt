@@ -1,0 +1,28 @@
+package com.mhxx.gansimu.ui.adapter
+
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.mhxx.gansimu.databinding.ItemSimpleBinding
+import com.mhxx.gansimu.model.Charm
+
+class CharmAdapter(
+    private val items: List<Charm>
+) : RecyclerView.Adapter<CharmAdapter.VH>() {
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
+        val binding = ItemSimpleBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return VH(binding)
+    }
+
+    override fun onBindViewHolder(holder: VH, position: Int) = holder.bind(items[position])
+    override fun getItemCount() = items.size
+
+    inner class VH(private val b: ItemSimpleBinding) : RecyclerView.ViewHolder(b.root) {
+        fun bind(c: Charm) {
+            b.txtTitle.text = c.name
+            b.txtSubtitle.text = "スロット${c.slots}  " +
+                    c.skills.joinToString(" ") { "${it.series}${if (it.points > 0) "+" else ""}${it.points}" }
+        }
+    }
+}
